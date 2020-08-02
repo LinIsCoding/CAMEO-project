@@ -1,2 +1,6 @@
 # CAMEO project
-To determine a event suitable for CMAEO framework or IDEA framework.
+During our research of CAMEO, we found another existing framework IDEA. To the best of our knowledge, none of the existing work compares IDEA and CAMEO. Furthermore, professor Phillip A., the author of CAMEO, believed  these two coding frameworks are complementary to each other rather than competitive. Therefore, it is very meaningful to construct an automated method to distinguish which framework is better suited to a given article.
+
+## Dataset
+We collected and labeled 600 pieces of data from CAMEO codebook(CAMEO.Manual.1.1b3), 187 from IDEA codebook(July 2002 version), 208 from Quantum Criticism data (provided by sponsors). 
+We classified events into 3 categories: 0 - suitable for CAMEO, 1 - suitable for IDEA, 2 - neither. Finally, we had 995 pieces of data in total, including 738 with category 0, 155 with category 1 and 102 with category 2. 
