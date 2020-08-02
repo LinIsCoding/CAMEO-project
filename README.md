@@ -9,15 +9,13 @@ We classified events into 3 categories: 0 - suitable for CAMEO, 1 - suitable for
 We loaded the data file (including text and labels) into DataFrame using Pandas.
 We tokenized text sentences using spaCy.
 We lemmatize the words by using spaCy.
-We loaded pretrain weight by using GloVe
+We loaded pretrain weight with 50 embedding dimension by using GloVe.
 
 ## Model and hyperparameter tuning
-We have four kinds of model to train our data 
-Support vector machine(SVM) and single hidden layer neural network model are built by sklearn, written in Baseline_Models.ipynb.
-We served SVM as baseline model.
-LSTM and GRU models are built by Pytorch, written in GRU_Model.ipynb and LSTM_Model.ipynb. For GRU and LSTM model, we tuned several hyperparameter including one or two hidden layer, hidden layer dimensions 50, 100, 150, 200, 0.1 or 0.01 learning rate, and also decreasing learning rate from 0.1 to 0.01.
+We have four kinds of model to train our data. 
+Support vector machine(SVM) and single hidden layer neural network model are built by sklearn, written in Baseline_Models.ipynb. 
+We served SVM as baseline model. 
+LSTM and GRU models are built by Pytorch, written in GRU_Model.ipynb and LSTM_Model.ipynb. For GRU and LSTM model, we tuned several hyperparameter including one or two hidden layer, hidden layer dimensions 50, 100, 150, 200, 0.1 or 0.01 learning rate, and also decreasing learning rate from 0.1 to 0.01. 
 
 ## Result
-baseline model SVM, the accuracy is 79%
-and the MLP and GRU have 85% accruacy
-the best model are LSTM models holding 86% accuracy 
+For the baseline model SVM, the accuracy is 79%. The MLP and GRU have 85% accruacy. The best model are LSTM models holding 86% accuracy 
